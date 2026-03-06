@@ -1,0 +1,1 @@
+Temporary Redirect. Redirecting to /api/resolve-cache/models/ngxson/demo_simple_rag_py/ccd6b7b72b52c7ca4e8f2a0a00b15c368d6ae294/cat-facts.txt?%2Fngxson%2Fdemo_simple_rag_py%2Fresolve%2Fmain%2Fcat-facts.txt=&etag=%22bc94ddd9483183e01bcf61e8bf9450fe3e09edb3%22
