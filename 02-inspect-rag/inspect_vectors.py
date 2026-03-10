@@ -79,6 +79,7 @@ pca = PCA(n_components=2)
 reduced_2d = pca.fit_transform(all_embeddings)
 
 plt.figure(figsize=(10, 8))
+plt.gcf().set_facecolor('white')
 plt.scatter(reduced_2d[:, 0], reduced_2d[:, 1], c='steelblue', s=100, alpha=0.7)
 
 for i, (chunk, _) in enumerate(VECTOR_DB):
@@ -104,6 +105,7 @@ tsne = TSNE(n_components=2, random_state=42, perplexity=perplexity)
 reduced_tsne = tsne.fit_transform(all_embeddings)
 
 plt.figure(figsize=(10, 8))
+plt.gcf().set_facecolor('white')
 plt.scatter(reduced_tsne[:, 0], reduced_tsne[:, 1], c='coral', s=100, alpha=0.7)
 
 for i, (chunk, _) in enumerate(VECTOR_DB):

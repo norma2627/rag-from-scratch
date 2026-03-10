@@ -41,7 +41,7 @@ def retrieve_all(query):
     for chunk, embedding in VECTOR_DB:
         similarity = cosine_similarity(query_embedding, embedding)
         similarities.append((chunk, similarity))
-    similarities.sort(key=lambda x:[1], reverse=True)
+    similarities.sort(key=lambda x: x[1], reverse=True)
     return similarities
 
 query = "How fast can cats run?"
@@ -64,9 +64,9 @@ plt.bar(
 )
 plt.xlabel('Chunk rank')
 plt.ylabel('Cosine similarity')
-plt.title(f'Similarity socores for query: "{query}"')
+plt.title(f'Similarity scores for query: "{query}"')
 plt.axhline(
-    y=scores[2], color='red', linestyle='--', alpha=0.5, label=f'Top3 threadshols: {scores[2]:.4f}',
+    y=scores[2], color='red', linestyle='--', alpha=0.5, label=f'Top3 threshold: {scores[2]:.4f}',
 )
 plt.legend()
 plt.tight_layout()
@@ -78,7 +78,7 @@ print('類似度分布を保存しました: similarity_distribution.png\n')
 # クエリを変えて比較
 queries = [
     "How fast can cats run?",
-    "Tell me about casts",
+    "Tell me about cats",
     "What is the meaning of life?",
 ]
 
@@ -99,4 +99,4 @@ for ax, q in zip(axes, queries):
 plt.tight_layout()
 plt.savefig('./png/query_comparison.png', dpi=150)
 plt.show()
-print('クエリを比較を保存しました: query_comparsion.png')
+print('クエリ比較を保存しました: query_comparsion.png')
