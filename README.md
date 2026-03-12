@@ -10,7 +10,7 @@
 | # | フォルダ | 内容 | 記事 |
 |---|---------|------|------|
 | 01 | [`01-simple-rag`](./01-simple-rag/) | RAG の基本実装（Indexing → Retrieval → Generation） | [【RAG入門】PythonとOllamaでゼロからRAGを実装して仕組みを理解する](https://zenn.dev/norma/articles/cee3bcf1472e00) |
-| 02 | [`02-inspect-rag`](./02-inspect-rag/) | チャンク・ベクトル・類似度の中身を覗いて理解を深める | （準備中） |
+| 02 | [`02-inspect-rag`](./02-inspect-rag/) | チャンク・ベクトル・類似度の中身を覗いて理解を深める | [【RAG入門②】RAGのチャンク・ベクトル・類似度の中身を覗く](https://zenn.dev/norma/articles/c75659ec2e8561) |
 
 ## 技術スタック
 
